@@ -26,8 +26,9 @@ module.exports = {
         endOfLine: 'auto' // 忽略LF、CRLF结尾符
       }
     ],
-    // 标签属性规则排序
-    'vue/attributes-order': 'error',
-    '@typescript-eslint/no-explicit-any': ['off']
+    'vue/attributes-order': 'error', // 标签属性规则排序
+    '@typescript-eslint/no-explicit-any': 'off', // any 类型声明
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off' // ts每个函数都要显式声明返回值
   }
 }

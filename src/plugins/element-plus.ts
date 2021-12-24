@@ -3,10 +3,12 @@ import 'element-plus/es/components/notification/style/css'
 
 import { ElNotification, ElMessage } from 'element-plus'
 
-export default (app: any): void => {
-  app.config.globalProperties.$ELEMENT = {
-    size: 'small'
+export default {
+  install: (app: any) => {
+    app.config.globalProperties.$ELEMENT = {
+      size: 'small'
+    }
+    app.use(ElNotification)
+    app.use(ElMessage)
   }
-  app.use(ElNotification)
-  app.use(ElMessage)
 }

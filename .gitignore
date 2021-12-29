@@ -26,4 +26,5 @@ pnpm-debug.log*
 /dist_electron
 
 # Auto-imports
-auto-imports*
+auto-imports.d.ts
+components.d.ts

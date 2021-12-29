@@ -22,8 +22,9 @@ specifiers:
   eslint-plugin-vue: ^7.0.0
   normalize.css: ^8.0.1
   prettier: ^2.2.1
-  sass: ^1.26.5
-  sass-loader: ^8.0.2
+  quasar: ^2.4.2
+  sass: 1.32.12
+  sass-loader: ^10.1.0
   typescript: ~4.1.5
   unplugin-auto-import: ^0.5.4
   unplugin-vue-components: ^0.17.9
@@ -36,6 +37,7 @@ dependencies:
   core-js: registry.npmmirror.com/core-js/3.20.0
   element-plus: registry.npmmirror.com/element-plus/1.2.0-beta.6_vue@3.2.26
   normalize.css: registry.npmmirror.com/normalize.css/8.0.1
+  quasar: registry.npmmirror.com/quasar/2.4.2
   vue: registry.npmmirror.com/vue/3.2.26
   vue-router: registry.npmmirror.com/vue-router/4.0.12_vue@3.2.26
 
@@ -47,7 +49,7 @@ devDependencies:
   '@vue/cli-plugin-eslint': registry.npmmirror.com/@vue/cli-plugin-eslint/4.5.15_159f9ca94908a7070131e2c321d72521
   '@vue/cli-plugin-router': registry.npmmirror.com/@vue/cli-plugin-router/4.5.15_@vue+cli-service@4.5.15
   '@vue/cli-plugin-typescript': registry.npmmirror.com/@vue/cli-plugin-typescript/4.5.15_4e4e41b2ba87fa709088a05d00f8eb89
-  '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_dc198eb2f3cb119d2e5c65ee40a62fd5
+  '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_0c0f0eec365aa2f919f34923ef70de4e
   '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.26
   '@vue/eslint-config-prettier': registry.nlark.com/@vue/eslint-config-prettier/6.0.0_4adef71036e25249dceaf9dc58301895
   '@vue/eslint-config-typescript': registry.npmmirror.com/@vue/eslint-config-typescript/7.0.0_a4026fa076dd8f44e94f0e8ffbcc3f1d
@@ -57,8 +59,8 @@ devDependencies:
   eslint-plugin-prettier: registry.npmmirror.com/eslint-plugin-prettier/3.4.1_eslint@6.8.0+prettier@2.5.1
   eslint-plugin-vue: registry.npmmirror.com/eslint-plugin-vue/7.20.0_eslint@6.8.0
   prettier: registry.npmmirror.com/prettier/2.5.1
-  sass: registry.npmmirror.com/sass/1.45.0
-  sass-loader: registry.npmmirror.com/sass-loader/8.0.2_sass@1.45.0
+  sass: registry.npmmirror.com/sass/1.32.12
+  sass-loader: registry.npmmirror.com/sass-loader/10.2.0_sass@1.32.12
   typescript: registry.npmmirror.com/typescript/4.1.6
   unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.5.4
   unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.17.9_vue@3.2.26
@@ -1613,17 +1615,6 @@ packages:
       wrap-ansi: registry.nlark.com/wrap-ansi/7.0.0
     dev: true
 
-  registry.nlark.com/clone-deep/4.0.1:
-    resolution: {integrity: sha1-wZ/Zvbv4WUK0/ZechNz31fB8I4c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/clone-deep/download/clone-deep-4.0.1.tgz}
-    name: clone-deep
-    version: 4.0.1
-    engines: {node: '>=6'}
-    dependencies:
-      is-plain-object: registry.nlark.com/is-plain-object/2.0.4
-      kind-of: registry.nlark.com/kind-of/6.0.3
-      shallow-clone: registry.nlark.com/shallow-clone/3.0.1
-    dev: true
-
   registry.nlark.com/clone-response/1.0.2:
     resolution: {integrity: sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/clone-response/download/clone-response-1.0.2.tgz}
     name: clone-response
@@ -2454,7 +2445,7 @@ packages:
     name: error-ex
     version: 1.3.2
     dependencies:
-      is-arrayish: registry.npmmirror.com/is-arrayish/0.2.1
+      is-arrayish: registry.nlark.com/is-arrayish/0.2.1
     dev: true
 
   registry.nlark.com/error-stack-parser/2.0.6:
@@ -2992,7 +2983,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
-      jsonfile: registry.npmmirror.com/jsonfile/6.1.0
+      jsonfile: registry.nlark.com/jsonfile/6.1.0
       universalify: registry.nlark.com/universalify/2.0.0
     dev: true
 
@@ -3014,7 +3005,7 @@ packages:
     engines: {node: '>=6 <7 || >=8'}
     dependencies:
       graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
-      jsonfile: registry.npmmirror.com/jsonfile/4.0.0
+      jsonfile: registry.nlark.com/jsonfile/4.0.0
       universalify: registry.nlark.com/universalify/0.1.2
     dev: true
 
@@ -3026,7 +3017,7 @@ packages:
     dependencies:
       at-least-node: registry.nlark.com/at-least-node/1.0.0
       graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
-      jsonfile: registry.npmmirror.com/jsonfile/6.1.0
+      jsonfile: registry.nlark.com/jsonfile/6.1.0
       universalify: registry.nlark.com/universalify/2.0.0
     dev: true
 
@@ -3773,6 +3764,18 @@ packages:
       has-tostringtag: registry.nlark.com/has-tostringtag/1.0.0
     dev: true
 
+  registry.nlark.com/is-arrayish/0.2.1:
+    resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-arrayish/download/is-arrayish-0.2.1.tgz}
+    name: is-arrayish
+    version: 0.2.1
+    dev: true
+
+  registry.nlark.com/is-arrayish/0.3.2:
+    resolution: {integrity: sha1-RXSirlb3qyBolvtDHq7tBm/fjwM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-arrayish/download/is-arrayish-0.3.2.tgz}
+    name: is-arrayish
+    version: 0.3.2
+    dev: true
+
   registry.nlark.com/is-bigint/1.0.4:
     resolution: {integrity: sha1-CBR6GHW8KzIAXUHM2Ckd/8ZpHfM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-bigint/download/is-bigint-1.0.4.tgz}
     name: is-bigint
@@ -4271,6 +4274,16 @@ packages:
     resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/jsonfile/download/jsonfile-4.0.0.tgz}
     name: jsonfile
     version: 4.0.0
+    optionalDependencies:
+      graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
+    dev: true
+
+  registry.nlark.com/jsonfile/6.1.0:
+    resolution: {integrity: sha1-vFWyY0eTxnnsZAMJTrE2mKbsCq4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/jsonfile/download/jsonfile-6.1.0.tgz}
+    name: jsonfile
+    version: 6.1.0
+    dependencies:
+      universalify: registry.nlark.com/universalify/2.0.0
     optionalDependencies:
       graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
     dev: true
@@ -6432,15 +6445,6 @@ packages:
       safe-buffer: registry.nlark.com/safe-buffer/5.2.1
     dev: true
 
-  registry.nlark.com/shallow-clone/3.0.1:
-    resolution: {integrity: sha1-jymBrZJTH1UDWwH7IwdppA4C76M=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/shallow-clone/download/shallow-clone-3.0.1.tgz}
-    name: shallow-clone
-    version: 3.0.1
-    engines: {node: '>=8'}
-    dependencies:
-      kind-of: registry.nlark.com/kind-of/6.0.3
-    dev: true
-
   registry.nlark.com/shebang-command/1.2.0:
     resolution: {integrity: sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/shebang-command/download/shebang-command-1.2.0.tgz}
     name: shebang-command
@@ -7306,14 +7310,6 @@ packages:
     version: 1.1.3
     dev: true
 
-  registry.nlark.com/uri-js/4.4.1:
-    resolution: {integrity: sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/uri-js/download/uri-js-4.4.1.tgz}
-    name: uri-js
-    version: 4.4.1
-    dependencies:
-      punycode: registry.nlark.com/punycode/2.1.1
-    dev: true
-
   registry.nlark.com/url-parse-lax/3.0.0:
     resolution: {integrity: sha1-FrXK/Afb42dsGxmZF3gj1lA6yww=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/url-parse-lax/download/url-parse-lax-3.0.0.tgz}
     name: url-parse-lax
@@ -8031,7 +8027,7 @@ packages:
     dev: true
 
   registry.npmmirror.com/@babel/highlight/7.16.0:
-    resolution: {integrity: sha1-bOsysspLj182H7f9gh4/3fShclo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/highlight/download/@babel/highlight-7.16.0.tgz?cache=0&sync_timestamp=1635561505187&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fhighlight%2Fdownload%2F%40babel%2Fhighlight-7.16.0.tgz}
+    resolution: {integrity: sha1-bOsysspLj182H7f9gh4/3fShclo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/highlight/download/@babel/highlight-7.16.0.tgz?cache=0&sync_timestamp=1635561540082&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fhighlight%2Fdownload%2F%40babel%2Fhighlight-7.16.0.tgz}
     name: '@babel/highlight'
     version: 7.16.0
     engines: {node: '>=6.9.0'}
@@ -9595,7 +9591,7 @@ packages:
     dependencies:
       '@babel/core': registry.npmmirror.com/@babel/core/7.16.5
       '@vue/babel-preset-app': registry.npmmirror.com/@vue/babel-preset-app/4.5.15_vue@3.2.26
-      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_dc198eb2f3cb119d2e5c65ee40a62fd5
+      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_0c0f0eec365aa2f919f34923ef70de4e
       '@vue/cli-shared-utils': registry.npmmirror.com/@vue/cli-shared-utils/4.5.15
       babel-loader: registry.npmmirror.com/babel-loader/8.2.3_16789ff3020ecb9b722cf50866e79393
       cache-loader: registry.nlark.com/cache-loader/4.1.0_webpack@4.46.0
@@ -9617,7 +9613,7 @@ packages:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
       eslint: '>= 1.6.0 < 7.0.0'
     dependencies:
-      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_dc198eb2f3cb119d2e5c65ee40a62fd5
+      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_0c0f0eec365aa2f919f34923ef70de4e
       '@vue/cli-shared-utils': registry.npmmirror.com/@vue/cli-shared-utils/4.5.15
       eslint: registry.npmmirror.com/eslint/6.8.0
       eslint-loader: registry.npmmirror.com/eslint-loader/2.2.1_eslint@6.8.0+webpack@4.46.0
@@ -9638,7 +9634,7 @@ packages:
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
     dependencies:
-      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_dc198eb2f3cb119d2e5c65ee40a62fd5
+      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_0c0f0eec365aa2f919f34923ef70de4e
       '@vue/cli-shared-utils': registry.npmmirror.com/@vue/cli-shared-utils/4.5.15
     dev: true
 
@@ -9656,7 +9652,7 @@ packages:
         optional: true
     dependencies:
       '@types/webpack-env': registry.npmmirror.com/@types/webpack-env/1.16.3
-      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_dc198eb2f3cb119d2e5c65ee40a62fd5
+      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_0c0f0eec365aa2f919f34923ef70de4e
       '@vue/cli-shared-utils': registry.npmmirror.com/@vue/cli-shared-utils/4.5.15
       '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.26
       cache-loader: registry.nlark.com/cache-loader/4.1.0_webpack@4.46.0
@@ -9683,10 +9679,10 @@ packages:
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
     dependencies:
-      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_dc198eb2f3cb119d2e5c65ee40a62fd5
+      '@vue/cli-service': registry.npmmirror.com/@vue/cli-service/4.5.15_0c0f0eec365aa2f919f34923ef70de4e
     dev: true
 
-  registry.npmmirror.com/@vue/cli-service/4.5.15_dc198eb2f3cb119d2e5c65ee40a62fd5:
+  registry.npmmirror.com/@vue/cli-service/4.5.15_0c0f0eec365aa2f919f34923ef70de4e:
     resolution: {integrity: sha1-DpoYbVFVACfQ5o6VBCB3600RW0U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/cli-service/download/@vue/cli-service-4.5.15.tgz}
     id: registry.npmmirror.com/@vue/cli-service/4.5.15
     name: '@vue/cli-service'
@@ -9762,7 +9758,7 @@ packages:
       pnp-webpack-plugin: registry.nlark.com/pnp-webpack-plugin/1.7.0_typescript@4.1.6
       portfinder: registry.nlark.com/portfinder/1.0.28
       postcss-loader: registry.npmmirror.com/postcss-loader/3.0.0
-      sass-loader: registry.npmmirror.com/sass-loader/8.0.2_sass@1.45.0
+      sass-loader: registry.npmmirror.com/sass-loader/10.2.0_sass@1.32.12
       ssri: registry.nlark.com/ssri/8.0.1
       terser-webpack-plugin: registry.npmmirror.com/terser-webpack-plugin/1.4.5_webpack@4.46.0
       thread-loader: registry.nlark.com/thread-loader/2.1.3_webpack@4.46.0
@@ -10016,7 +10012,7 @@ packages:
       fast-deep-equal: registry.nlark.com/fast-deep-equal/3.1.3
       fast-json-stable-stringify: registry.nlark.com/fast-json-stable-stringify/2.1.0
       json-schema-traverse: registry.nlark.com/json-schema-traverse/0.4.1
-      uri-js: registry.nlark.com/uri-js/4.4.1
+      uri-js: registry.npmmirror.com/uri-js/4.4.1
     dev: true
 
   registry.npmmirror.com/ansi-align/3.0.1:
@@ -11946,12 +11942,6 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
-  registry.npmmirror.com/immutable/4.0.0:
-    resolution: {integrity: sha1-uG943mre82CDle+yaakUYnl+LCM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immutable/download/immutable-4.0.0.tgz}
-    name: immutable
-    version: 4.0.0
-    dev: true
-
   registry.npmmirror.com/import-lazy/2.1.0:
     resolution: {integrity: sha1-BWmOPUXIjo1+nZLLBYTnfwlvPkM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/import-lazy/download/import-lazy-2.1.0.tgz}
     name: import-lazy
@@ -12022,18 +12012,6 @@ packages:
       ipaddr.js: registry.nlark.com/ipaddr.js/1.9.1
     dev: true
 
-  registry.npmmirror.com/is-arrayish/0.2.1:
-    resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-arrayish/download/is-arrayish-0.2.1.tgz}
-    name: is-arrayish
-    version: 0.2.1
-    dev: true
-
-  registry.npmmirror.com/is-arrayish/0.3.2:
-    resolution: {integrity: sha1-RXSirlb3qyBolvtDHq7tBm/fjwM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-arrayish/download/is-arrayish-0.3.2.tgz}
-    name: is-arrayish
-    version: 0.3.2
-    dev: true
-
   registry.npmmirror.com/is-ci/1.2.1:
     resolution: {integrity: sha1-43ecjuF/zPQoSI9uKBGH8uYyhBw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-ci/download/is-ci-1.2.1.tgz}
     name: is-ci
@@ -12079,7 +12057,7 @@ packages:
     dev: true
 
   registry.npmmirror.com/is-glob/4.0.3:
-    resolution: {integrity: sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-glob/download/is-glob-4.0.3.tgz?cache=0&sync_timestamp=1632935092433&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fis-glob%2Fdownload%2Fis-glob-4.0.3.tgz}
+    resolution: {integrity: sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-glob/download/is-glob-4.0.3.tgz}
     name: is-glob
     version: 4.0.3
     engines: {node: '>=0.10.0'}
@@ -12192,24 +12170,6 @@ packages:
     version: 3.3.3
     dev: true
 
-  registry.npmmirror.com/jsonfile/4.0.0:
-    resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsonfile/download/jsonfile-4.0.0.tgz}
-    name: jsonfile
-    version: 4.0.0
-    optionalDependencies:
-      graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
-    dev: true
-
-  registry.npmmirror.com/jsonfile/6.1.0:
-    resolution: {integrity: sha1-vFWyY0eTxnnsZAMJTrE2mKbsCq4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsonfile/download/jsonfile-6.1.0.tgz}
-    name: jsonfile
-    version: 6.1.0
-    dependencies:
-      universalify: registry.nlark.com/universalify/2.0.0
-    optionalDependencies:
-      graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
-    dev: true
-
   registry.npmmirror.com/jsprim/1.4.2:
     resolution: {integrity: sha512-P2bSOMAc/ciLz6DzgjVlGJP9+BrJWu5UDGK70C2iweC5QBIeFf0ZXRvGjEj2uYgrY2MkAAhsSWHDWlFtEroZWw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsprim/download/jsprim-1.4.2.tgz}
     name: jsprim
@@ -12239,6 +12199,13 @@ packages:
     version: 3.1.0
     dependencies:
       json-buffer: registry.nlark.com/json-buffer/3.0.0
+    dev: true
+
+  registry.npmmirror.com/klona/2.0.5:
+    resolution: {integrity: sha1-0WZXTZAHY5XZljqnqSj6u412r7w=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/klona/download/klona-2.0.5.tgz}
+    name: klona
+    version: 2.0.5
+    engines: {node: '>= 8'}
     dev: true
 
   registry.npmmirror.com/latest-version/5.1.0:
@@ -12312,7 +12279,6 @@ packages:
       emojis-list: registry.nlark.com/emojis-list/3.0.0
       json5: registry.nlark.com/json5/2.2.0
     dev: true
-    optional: true
 
   registry.npmmirror.com/local-pkg/0.4.0:
     resolution: {integrity: sha1-5iIRcYE9WggS3YT6gP+xyPzABTE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/local-pkg/download/local-pkg-0.4.0.tgz}
@@ -13002,6 +12968,13 @@ packages:
     engines: {node: '>=0.6'}
     dev: true
 
+  registry.npmmirror.com/quasar/2.4.2:
+    resolution: {integrity: sha512-5fnWKg8yc1cGWE7sTt5FxfOqCtdxcy52pmxvpVGNy4TFNG0pC0FBuGR9toY/P1p7VoI422e89M9Ab/wkXcrRkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/quasar/download/quasar-2.4.2.tgz}
+    name: quasar
+    version: 2.4.2
+    engines: {node: '>= 10.18.1', npm: '>= 6.13.4', yarn: '>= 1.21.1'}
+    dev: false
+
   registry.npmmirror.com/querystring/0.2.0:
     resolution: {integrity: sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/querystring/download/querystring-0.2.0.tgz}
     name: querystring
@@ -13117,15 +13090,15 @@ packages:
       truncate-utf8-bytes: registry.npmmirror.com/truncate-utf8-bytes/1.0.2
     dev: true
 
-  registry.npmmirror.com/sass-loader/8.0.2_sass@1.45.0:
-    resolution: {integrity: sha1-3r7NjDziQ8dkVPLoKQSCFQOACQ0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sass-loader/download/sass-loader-8.0.2.tgz}
-    id: registry.npmmirror.com/sass-loader/8.0.2
+  registry.npmmirror.com/sass-loader/10.2.0_sass@1.32.12:
+    resolution: {integrity: sha1-PWTBWQ+REBOz+kigsiqD1eFJRxY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sass-loader/download/sass-loader-10.2.0.tgz}
+    id: registry.npmmirror.com/sass-loader/10.2.0
     name: sass-loader
-    version: 8.0.2
-    engines: {node: '>= 8.9.0'}
+    version: 10.2.0
+    engines: {node: '>= 10.13.0'}
     peerDependencies:
       fibers: '>= 3.1.0'
-      node-sass: ^4.0.0
+      node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0
       sass: ^1.3.0
       webpack: ^4.36.0 || ^5.0.0
     peerDependenciesMeta:
@@ -13136,28 +13109,26 @@ packages:
       sass:
         optional: true
     dependencies:
-      clone-deep: registry.nlark.com/clone-deep/4.0.1
-      loader-utils: registry.npmmirror.com/loader-utils/1.4.0
+      klona: registry.npmmirror.com/klona/2.0.5
+      loader-utils: registry.npmmirror.com/loader-utils/2.0.2
       neo-async: registry.nlark.com/neo-async/2.6.2
-      sass: registry.npmmirror.com/sass/1.45.0
-      schema-utils: registry.npmmirror.com/schema-utils/2.7.1
-      semver: registry.nlark.com/semver/6.3.0
+      sass: registry.npmmirror.com/sass/1.32.12
+      schema-utils: registry.npmmirror.com/schema-utils/3.1.1
+      semver: registry.nlark.com/semver/7.3.5
     dev: true
 
-  registry.npmmirror.com/sass/1.45.0:
-    resolution: {integrity: sha512-ONy5bjppoohtNkFJRqdz1gscXamMzN3wQy1YH9qO2FiNpgjLhpz/IPRGg0PpCjyz/pWfCOaNEaiEGCcjOFAjqw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sass/download/sass-1.45.0.tgz}
+  registry.npmmirror.com/sass/1.32.12:
+    resolution: {integrity: sha1-oqR60PHBaCIttSBkRKMMEkV6u58=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sass/download/sass-1.32.12.tgz}
     name: sass
-    version: 1.45.0
+    version: 1.32.12
     engines: {node: '>=8.9.0'}
     hasBin: true
     dependencies:
       chokidar: registry.npmmirror.com/chokidar/3.5.2
-      immutable: registry.npmmirror.com/immutable/4.0.0
-      source-map-js: registry.npmmirror.com/source-map-js/1.0.1
     dev: true
 
   registry.npmmirror.com/schema-utils/1.0.0:
-    resolution: {integrity: sha1-C3mpMgTXtgDUsoUNH2bCo0lRx3A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/schema-utils/download/schema-utils-1.0.0.tgz?cache=0&sync_timestamp=1637077352426&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fschema-utils%2Fdownload%2Fschema-utils-1.0.0.tgz}
+    resolution: {integrity: sha1-C3mpMgTXtgDUsoUNH2bCo0lRx3A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/schema-utils/download/schema-utils-1.0.0.tgz?cache=0&sync_timestamp=1637078133476&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fschema-utils%2Fdownload%2Fschema-utils-1.0.0.tgz}
     name: schema-utils
     version: 1.0.0
     engines: {node: '>= 4'}
@@ -13180,10 +13151,21 @@ packages:
     optional: true
 
   registry.npmmirror.com/schema-utils/2.7.1:
-    resolution: {integrity: sha1-HKTzLRskxZDCA7jnpQvw6kzTlNc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/schema-utils/download/schema-utils-2.7.1.tgz?cache=0&sync_timestamp=1637077352426&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fschema-utils%2Fdownload%2Fschema-utils-2.7.1.tgz}
+    resolution: {integrity: sha1-HKTzLRskxZDCA7jnpQvw6kzTlNc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/schema-utils/download/schema-utils-2.7.1.tgz?cache=0&sync_timestamp=1637078133476&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fschema-utils%2Fdownload%2Fschema-utils-2.7.1.tgz}
     name: schema-utils
     version: 2.7.1
     engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@types/json-schema': registry.npmmirror.com/@types/json-schema/7.0.9
+      ajv: registry.npmmirror.com/ajv/6.12.6
+      ajv-keywords: registry.npmmirror.com/ajv-keywords/3.5.2_ajv@6.12.6
+    dev: true
+
+  registry.npmmirror.com/schema-utils/3.1.1:
+    resolution: {integrity: sha1-vHTEtraZXB2I92qLd76nIZ4MgoE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/schema-utils/download/schema-utils-3.1.1.tgz?cache=0&sync_timestamp=1637078133476&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fschema-utils%2Fdownload%2Fschema-utils-3.1.1.tgz}
+    name: schema-utils
+    version: 3.1.1
+    engines: {node: '>= 10.13.0'}
     dependencies:
       '@types/json-schema': registry.npmmirror.com/@types/json-schema/7.0.9
       ajv: registry.npmmirror.com/ajv/6.12.6
@@ -13264,7 +13246,7 @@ packages:
     name: simple-swizzle
     version: 0.2.2
     dependencies:
-      is-arrayish: registry.npmmirror.com/is-arrayish/0.3.2
+      is-arrayish: registry.nlark.com/is-arrayish/0.3.2
     dev: true
 
   registry.npmmirror.com/slash/3.0.0:
@@ -13867,6 +13849,14 @@ packages:
       jszip: registry.npmmirror.com/jszip/3.7.1
       mkdirp: registry.npmmirror.com/mkdirp/0.5.5
       yaku: registry.npmmirror.com/yaku/0.16.7
+    dev: true
+
+  registry.npmmirror.com/uri-js/4.4.1:
+    resolution: {integrity: sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uri-js/download/uri-js-4.4.1.tgz}
+    name: uri-js
+    version: 4.4.1
+    dependencies:
+      punycode: registry.nlark.com/punycode/2.1.1
     dev: true
 
   registry.npmmirror.com/urix/0.1.0:
